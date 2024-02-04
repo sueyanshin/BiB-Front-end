@@ -1,0 +1,4 @@
+$(function(){
+    $(".box > div").heightLine();
+  });
+  

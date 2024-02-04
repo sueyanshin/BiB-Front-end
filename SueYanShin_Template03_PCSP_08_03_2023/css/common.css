@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family:'Helvecia' ;
+  font-weight: 400;
+  src: url('../fonts/Helvetica.ttf');
+}
+@font-face {
+  font-family:'Helvecia' ;
+  font-weight: 700;
+  src: url('../fonts/Helvetica-Bold.ttf');
+}
+@font-face {
+  font-family:'Roboto' ;
+  font-weight: 400;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family:'Roboto' ;
+  font-weight: 700;
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  background-color: #F6F8F9;
+  color: #000000;
+  font-family:'Helvecia',sans-serif ;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 1920px;
+}
+.clearfix::after{
+  display: block;
+  clear: both;
+  content: "";
+}
+a{
+  display: inline-block;
+  color: #343638;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover{
+  transition: 0.8s;
+  -webkit-transition:0.8s;
+  opacity: 0.8;
+}
+
+img{
+  vertical-align: bottom;
+  max-width: 100%;
+}
+.pc{
+  display: block;
+}
+.sp{
+  display: none;
+}
+.l-inner{
+  margin: 0 auto;
+  max-width: 1160px;
+}
+/*Common Button*/
+.cmn-btn{
+  width: 134px;
+  padding: 12px 5px;
+  border: 1px solid transparent;
+  background-color: #FA6980;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+
+}
+.cmn-btn:hover{
+  border: 1px solid #FA6980;
+  background-color: #FFFFFF;
+  color: #FA6980;
+}
+.mv-ttl{
+  padding:0 0 32px ;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+border-bottom: 2px solid #FFF;
+}
+.cmn-ttl{
+  font-size: 24px;
+  font-weight: 700;
+}
+.underline{
+  text-decoration: underline;
+  color: #A6ADB4;
+  font-size: 13px;
+}
+/* Header */
+.header{
+  padding: 17px 0;
+  background-color: #F6F8F9;
+}
+.header .header-logo{
+  float: left;
+}
+.header .gnav{
+  float: right;
+}
+.header .gnav ul{
+  float: left;
+}
+.header .gnav ul li{
+  float: left;
+  margin-right: 39px;
+}
+.header .gnav ul li:last-child{
+  margin-right: 0;
+}
+.header .gnav ul li a{
+  font-size:14px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+.header .gnav ul li a:hover{
+  color: #343638 ;
+}
+.header .gnav ul li.active{
+  color: #343638;
+}
+/*Mainvisual Section*/
+.mv-ttl{
+  color: #000000;
+  border-bottom: 2px solid #EBEDED;
+}
+
+ .mv-article strong {
+  color: #FA6980;
+  font-weight: 700;
+}
+ .mv-article .mv-article-ttl {
+  padding: 17px 0 9px;
+  font-weight: 700;
+}
+ .mv-article p {
+  line-height: 1.48;
+  padding: 0px 0 11px;
+  color: #A6ADB4;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+ .min-ago{
+  position: relative;
+  padding-left: 25px;
+  color: #A6ADB4;
+  font-size: 13px;
+}
+ .min-ago::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url('../img/top/img_clock.png')no-repeat center/contain;
+  content: "";
+}
+
+/*................... Discovery...................  */
+
+.person-info{
+  position: relative;
+  display: inline-block;
+}
+.person-info span{
+  padding-left: 17px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.person-info::before{
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url('../img/discovery/img_steven_voorhees.png');
+}
+.footer{
+  padding: 54px 0;
+  background-color: #A6ADB4;
+}
+.footer .logo-blk {
+  float: left;
+  padding-right: 40px;
+}
+.footer .footer-nav-blk{
+  float: left;
+  padding-right: 40px;
+ 
+}
+.footer .footer-nav-blk .footer-nav ul{
+  float: left;
+  margin-right: 40px;
+}
+
+.footer .footer-nav-blk .footer-nav:last-child{
+  margin-right: 0;
+}
+.footer .footer-nav-blk .footer-nav ul li{
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.footer .footer-nav-blk .footer-nav ul li a{
+  color: #CBD0D3;}
+.footer .input-blk{
+  float: left;
+  padding-left: 111px;
+}
+
+.footer .input-box {
+  background: url('../img/common/img_send.png')no-repeat center/contain;
+  background-size: auto;
+  background-position: right;
+  padding: 0px 0px 0px 16px;
+
+  width: 260px;
+  height: 39px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #A6ADB4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.footer .input-box::placeholder {
+  color: #CBD0D3; /* replace with your desired color */
+}
+
+.footer .input-blk p{
+  font-size: 11px;
+  color: #CBD0D3;
+  padding-top: 21px;
+}
+
+.footer .social{
+  float: right;
+}
+.footer .social ul li{
+  float: left;
+  padding: 0 16px;
+}
+.footer .social ul li:last-child{
+  padding-right:0 ;
+}

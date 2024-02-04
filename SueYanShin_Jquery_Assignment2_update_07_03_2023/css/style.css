@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/*Menu Page*/
+
+.header {
+
+  background-color: #EEC63B;
+  ;
+}
+
+li {
+  list-style: none;
+}
+
+.gnav {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  color: #000;
+
+}
+
+.gnav ul {
+  margin-left: 100px;
+}
+
+.gnav li {
+  float: left;
+  margin-right: 60px;
+  padding: 18px;
+
+}
+
+.gnav li a {
+  color: #000;
+}
+
+.gnav li:hover {
+  background-color: #fff;
+  border-radius: 12px;
+
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media(max-width:1024px) {
+  .menu {
+    display: block;
+  }
+
+  .menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .gnav ul {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    display: none;
+    height: 100%;
+    background-color: #EEC63B;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .gnav ul li {
+    width: 90%;
+    margin: 16px 0;
+  }
+
+  .gnav ul li a {
+    display: block;
+  }
+
+  ul.active {
+    display: block;
+  }
+}
+
+/*Accordion Page*/
+.accordion {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  max-width: 500px;
+}
+
+.accordion a.toggle {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  background-color: #000000c0;
+}
+
+.accordion a.toggle.active {
+  background-color: #000;
+}
+
+.accordion a.toggle:hover {
+  background-color: #000;
+
+}
+
+.accordion .inner {
+  padding: 10px 0;
+}
+
+/*Tab Page*/
+.wrapper {
+  margin: 80px auto;
+  max-width: 500px;
+
+
+}
+
+.wrapper.tab-wrapper {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 500px;
+}
+
+.wrapper .tab-wrapper .tabs li {
+  float: left;
+  width: 33%;
+  padding: 20px;
+  color: #aaa;
+
+  font-size: 20px;
+  font-weight: 700px;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+
+}
+
+.wrapper .tab-wrapper .tabs li:hover {
+  background-color: rgb(242, 237, 206, 0.4);
+  color: #999;
+  border-bottom: 3px solid #999;
+}
+
+.wrapper .tab-wrapper .tabs li.active {
+  color: #EEC63B;
+  border-bottom: 3px solid #EEC63B;
+}
+
+.wrapper .content-wrapper {
+  padding: 40px 60px;
+}
+
+.wrapper .content-wrapper .tab-content {
+  line-height: 1.2;
+  color: #888;
+  font-size: 16px;
+  font-weight: 300;
+}

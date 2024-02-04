@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h3>Contact Form</h3>
+    <form>
+      <fieldset>
+        <label for="name"> Name: </label>
+        <input id="name" name="name" type="text" autocomplete="name" required />
+        <br />
+        <label for="email"> Email: </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        />
+        <br />
+
+        <input
+          type="checkbox"
+          id="smartphone"
+          name="smartphone"
+          value="Smartphone"
+        />
+        <label for="smartphone"> I have a smartphone</label><br />
+        <input type="checkbox" id="laptop" name="laptop" value="Laptop" />
+        <label for="laptop"> I have a laptop</label><br />
+        <input type="checkbox" id="smarttv" name="smarttv" value="Smarttv" />
+        <label for="smarttv"> I have smarttv</label><br /><br />
+
+        <label for="cars">Choose a option:</label>
+
+        <select name="num" id="num">
+          <option value="one">1</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
+          <option value="four">4</option>
+        </select>
+        <br />
+          <input type="radio" id="male" name="gender" value="Male" />  
+        <label for="html">Male</label><br />
+          <input type="radio" id="female" name="gender" value="Female" />  
+        <label for="css">Female</label><br />
+
+        <label for="message"> Message: </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          cols="30"
+          required
+        ></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+
+.watch-video{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+.contact{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 15px;
+    
+}
+.contact:hover{
+    background-color: black;
+    color: white;
+}
+
+table,th,td{
+    border: 1px solid;
+    background-color: bisque;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}

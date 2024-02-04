@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+    text-align: left;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/*Header Section*/
+
+.header {
+    padding: 35px;
+    background-color: #fffd8c;
+}
+
+/*Main Section*/
+.main {
+    margin: 10px 0;
+}
+
+.main .nav {
+    float: left;
+    width: 20%;
+    padding: 100px 0;
+    background-color: #0cf3b9;
+}
+
+.main .right-section {
+    float: right;
+    width: 79%;
+}
+
+.main .upper-section {
+    padding: 10px 20px;
+    background-color: #b9b9b9;
+}
+
+.main .upper-article {
+    float: left;
+    width: 70%;
+    margin: 10px 0;
+    padding: 101px 0;
+    background-color: #10a7ff;
+}
+
+.main .aside-parent {
+    float: right;
+    width: 28%;
+}
+
+.main .aside {
+    margin: 10px 0;
+    padding: 43px 0;
+    background-color: #ff9361;
+}
+
+.main .lower-section {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #b9b9b9;
+}
+
+.main .lower-article {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+    padding: 43px 0;
+    background-color: #10a7ff;
+}
+
+.main .lower-section .aside {
+    float: right;
+    width: 28%;
+
+}
+
+/*Footer Section*/
+.footer {
+    padding: 35px 0;
+    background-color: #6aff6a;
+}

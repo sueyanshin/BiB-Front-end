@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Julius Sans One';
+  font-weight: 400;
+  src: url('../fonts/JuliusSansOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Arial';
+  font-weight: 400;
+  src: url('../fonts/arial.ttf');
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  font-weight: 400;
+  src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+body {
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 1920px;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+}
+
+.l-inner {
+  margin: 0 auto;
+  max-width: 1281px;
+}
+
+.com-ttl {
+  line-height: 1.2;
+  font-size: 35px;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sub-ttl {
+  line-height: 1.5;
+  margin-top: 26px;
+  color: rgba(54, 54, 54, 0.6);
+}
+
+.com-btn {
+  width: 312px;
+  margin: 0 auto;
+  padding: 22px 10px 17px;
+  border: 1px solid transparent;
+  background-color: #363636;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.com-btn:hover {
+  border: 1px solid #363636;
+  background-color: #ffffff;
+  color: #363636;
+}
+
+/*MV Section*/
+.sec-mv {
+  position: relative;
+  padding: 35px 0 108px;
+  background: url("../img/img_mv_bg.jpg")no-repeat center/cover;
+}
+
+.sec-mv .header {
+  margin-bottom: 95px;
+  padding: 30px 0 23px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+
+}
+
+.sec-mv .header-logo {
+  position: absolute;
+  top: 0;
+  float: left;
+  padding: 47px 94px 46px 107px;
+  background: url("../img/img_header_logo_bg.png")no-repeat center/cover;
+}
+
+.sec-mv .header .gnav {
+  float: right;
+
+}
+
+.sec-mv li {
+  float: left;
+  margin-right: 60px;
+}
+
+.sec-mv li a {
+  color: rgba(99, 99, 99, 0.6);
+  font-weight: bold;
+}
+
+.gnav li .active {
+  color: #636363;
+  border-bottom: 1px solid #636363;
+
+}
+
+.gnav li a:hover {
+  color: #686363;
+  border-bottom: 1px solid #636363;
+}
+
+.sec-mv .mv-blk .txt-blk {
+  width: 450px;
+  padding: 54px 66px;
+  border: 5px solid #ebebeb;
+}
+
+/*Sec-Book Section*/
+.sec-book {
+  margin-top: 40px;
+}
+
+.sec-book .book-img {
+  float: left;
+}
+
+.sec-book .book-txt {
+  float: right;
+  width: 35%;
+}
+
+.sec-book .book-txt .com-btn {
+  margin-top: 40px;
+}
+
+/*Menu Section*/
+
+.sec-menu .menu-mark {
+  text-align: center;
+}
+
+.sec-menu .menu-mark::before {
+  display: inline-block;
+  width: 422px;
+  height: 10px;
+  margin-right: 46px;
+  content: '';
+  border-bottom: 2px solid #000;
+
+
+}
+
+.sec-menu .menu-mark::after {
+  display: inline-block;
+  width: 422px;
+  height: 10px;
+  margin-left: 46px;
+  content: '';
+  border-bottom: 2px solid #000000;
+
+
+}
+
+.sec-menu h2 {
+  margin: 50px 0 80px 0;
+  text-align: center;
+}
+
+
+.sec-menu .menu-list li {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 46px;
+
+
+
+}
+
+.sec-menu .menu-list .img-blk {
+  float: left;
+  background: url('../img/img_menu01.jpg');
+}
+
+.sec-menu .menu-list .txt-blk {
+  float: right;
+  width: 65%;
+}
+
+.sec-menu .menu-ttl {
+  line-height: 1.2;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/*Chefs Section*/
+.sec-chefs {
+  margin-top: 80px;
+  background: url('../img/img_chef_bg.jpg')no-repeat center/cover;
+}
+
+.sec-chefs .com-ttl {
+  padding: 54px 0 42px 0;
+  text-align: center;
+}
+
+.sec-chefs .chefs-list li {
+  float: left;
+  width: 28%;
+  margin-right: 5%;
+  margin-bottom: 46px;
+}
+
+.sec-chefs .chef-name {
+  line-height: 1.2;
+  margin-top: 42px;
+  margin-right: 35px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sec-chefs .chef-name span {
+  display: inline-block;
+}
+
+/*Blog Section*/
+.sec-blog {
+
+  background: url('../img/img_blog_bg.jpg')no-repeat center/cover;
+}
+
+.sec-blog .com-ttl {
+  padding: 54px 0 42px 0;
+  text-align: center;
+}
+
+.sec-blog .blog-list li {
+  float: left;
+  width: 28%;
+  margin-right: 5%;
+
+}
+
+.blog-img {
+  position: relative;
+}
+
+.blog-img h3 {
+  position: absolute;
+  top: 111px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(93, 93, 91, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.sec-blog .arrow-btn {
+  display: inline-block;
+  width: 120px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid transparent;
+  background-color: #d5d0cc;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.arrows {
+
+  margin: 40px 0 80px;
+  text-align: center;
+}
+
+.arrow-btn.active {
+  background-color: #d5d0cc;
+}
+
+
+.arrow-btn:hover {
+  border: 1px solid #363636;
+  background-color: #363636;
+  color: #363636;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: #2b2a2a;
+  text-align: center;
+
+}
+
+.footer img {
+  margin-top: 44px;
+}
+
+.footer p {
+  width: 25%;
+  margin: 45px auto;
+  color: #ffffff;
+}
+
+.footer .copyright {
+  padding: 36px 0;
+  background-color: #252525;
+  color: #ffffff;
+
+}

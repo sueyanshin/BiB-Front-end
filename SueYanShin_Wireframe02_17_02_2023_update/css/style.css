@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.common-box {
+  margin: 10px 0px;
+  padding: 20px 0;
+  border: 1px solid #000;
+  background-color: #A3D6D4;
+}
+
+/*Header Section*/
+.header {
+  padding: 20px 10px 10px;
+  border: 1px solid;
+  background-color: #F1D19B;
+}
+
+.header .nav {
+  margin-top: 10px;
+  padding: 10px 0;
+  border: 1px solid #000;
+  background-color: #C08485;
+
+}
+
+/*Main Section*/
+/* Left */
+.main {
+  margin: 10px 0;
+}
+
+.main .left-section {
+  float: left;
+  width: 20%;
+  padding: 10px 10px 20px;
+  border: 1px solid #000;
+  background-color: #F1E9CB;
+
+}
+
+.main .left-section .left-nav {
+  margin: 10px 0px;
+  padding: 268px 0;
+  border: 1px solid #000;
+  background-color: #C2D5A7;
+}
+
+/* Right */
+.main .right-section {
+  float: right;
+  width: 79%;
+  padding: 10px 10px 20px;
+  border: 1px solid #000;
+  background-color: #F1D19B;
+
+}
+
+.main .upper-article {
+  padding: 10px 10px;
+  border: 1px solid #000;
+  background-color: #F1E9CB;
+
+}
+
+.main .upper-article .long-box {
+  margin: 10px 0px;
+  padding: 8px 0;
+  border: 1px solid #000;
+  background-color: #B0ABCA;
+}
+
+.main .lower-article {
+  margin: 10px 0px;
+  padding: 10px 10px;
+  border: 1px solid #000;
+  background-color: #F1E9CB;
+}
+
+.main .lower-article .sm-box {
+  margin: 10px 0px;
+  padding: 8px 0;
+  border: 1px solid #000;
+  background-color: #E1C6AC;
+}
+
+.main .lower-article .left {
+  float: left;
+  width: 49%;
+  margin: 10px 0;
+  padding: 60px 0;
+  border: 1px solid;
+  background-color: #E2A9BE;
+}
+
+.main .lower-article .right {
+  float: right;
+  width: 49%;
+  margin: 10px 0;
+  padding: 60px 0;
+  border: 1px solid #000;
+  background-color: #E2A9BE;
+}
+
+/*Footer Section*/
+.footer {
+  padding: 30px 0;
+  border: 1px solid #000;
+  background-color: #F1D19B;
+}

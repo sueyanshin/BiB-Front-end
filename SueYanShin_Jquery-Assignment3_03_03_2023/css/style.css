@@ -1,0 +1,139 @@
+body {
+  margin: 20px 100px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Slider*/
+h1 {
+  padding: 20px;
+  color: #2f97ff;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h2 {
+  padding: 30px;
+  color: #2f97ff;
+  font-size: 60px;
+}
+
+h3 {
+  padding: 30px;
+  background-color: #fff;
+  color: #2f97ff;
+  font-size: 60px;
+}
+
+li {
+  width: 200px;
+  padding: 50px 50px;
+  background-color: #2f97ff;
+  color: #fff;
+  font-size: 50px;
+
+}
+
+/*height line js*/
+.clearfix {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.box div {
+  display: in;
+  float: left;
+  width: 19%;
+  margin: 20px;
+  padding: 20px;
+  background: #000;
+  color: white;
+}
+
+/*Slider syncing*/
+
+
+.js .slider-single>div:nth-child(1n+2) {
+  display: none;
+}
+
+.js .slider-single.slick-initialized>div:nth-child(1n+2) {
+  display: block;
+}
+
+h3 {
+  position: relative;
+  margin: .5rem;
+  padding: 2%;
+  background: #f0f0f0;
+  color: #3498db;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.slider-single h3 {
+  line-height: 10rem;
+}
+
+.slider-nav h3::before {
+  display: block;
+  padding-top: 75%;
+  content: "";
+}
+
+.slider-nav h3 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide {
+  cursor: pointer;
+}
+
+.slick-slide.is-active h3 {
+  background-color: #fff;
+  color: #c00;
+}
+
+/*Smooth Anchor */
+.anchor .links {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+
+}
+
+.anchor .links a {
+  padding: 10px;
+  background-color: #25b54b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.anchor section {
+  margin-top: 10px;
+  padding: 350px 0;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+
+}
+
+.anchor #section1 {
+  background-color: #2fffce;
+}
+
+.anchor #section2 {
+  background-color: #ff2fd288;
+}
+
+.anchor #section3 {
+  background-color: #2f9eff9d;
+}
